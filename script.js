@@ -5,11 +5,11 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const fullName = document.getElementById('fullName').value;
     const className = document.getElementById('class').value;
 
-    // Xử lý thông tin ở đây (ví dụ: lưu vào cơ sở dữ liệu hoặc gửi đến server)
-    // Ở đây, chúng ta chỉ cần hiển thị thông báo thành công
-
+    // Hiển thị thông điệp thành công
     const message = `Đăng ký thành công cho sinh viên ${fullName} (Mã số: ${studentId}, Lớp: ${className})`;
-    document.getElementById('message').innerText = message;
+    const messageDiv = document.getElementById('message');
+    messageDiv.innerText = message;
+    messageDiv.style.display = 'block'; // Hiện tin nhắn
 
     // Reset form
     document.getElementById('registrationForm').reset();
