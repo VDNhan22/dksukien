@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tham Gia Sự Kiện</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng Ký Tham Gia Sự Kiện</h1>
+        <form id="registrationForm">
+            <label for="studentId">Mã Số Sinh Viên:</label>
+            <input type="text" id="studentId" name="studentId" required>
+
+            <label for="fullName">Họ Tên:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="class">Lớp:</label>
+            <input type="text" id="class" name="class" required>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
