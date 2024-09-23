@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Ký Tham Gia Sự Kiện</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Đăng Ký Tham Gia Sự Kiện</h1>
         <form id="registrationForm">
-            <label for="studentId">Mã Số Sinh Viên:</label>
-            <input type="text" id="studentId" name="studentId" required>
-
-            <label for="fullName">Họ Tên:</label>
-            <input type="text" id="fullName" name="fullName" required>
-
-            <label for="class">Lớp:</label>
-            <input type="text" id="class" name="class" required>
-
+            <div class="input-group">
+                <label for="studentId">Mã Số Sinh Viên:</label>
+                <input type="text" id="studentId" name="studentId" required>
+            </div>
+            <div class="input-group">
+                <label for="fullName">Họ Tên:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="input-group">
+                <label for="class">Lớp:</label>
+                <input type="text" id="class" name="class" required>
+            </div>
             <button type="submit">Đăng Ký</button>
         </form>
         <div id="message" class="message"></div>
@@ -27,3 +33,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
